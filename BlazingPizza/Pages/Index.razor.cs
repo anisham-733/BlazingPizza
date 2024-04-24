@@ -6,8 +6,8 @@ namespace BlazingPizza.Pages
     public partial class Index
     {
         public List<PizzaSpecial> specials = new List<PizzaSpecial>();
+        Order order => OrderState.Order;
 
-        
         [Inject]
         public HttpClient HttpClient { get; set; }
 
